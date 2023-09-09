@@ -10,6 +10,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
+      
       - name: Run a one-line script
         run: echo Hello, this is a test
+
+      - name: Azure PowerShell Action
+        uses: Azure/powershell@v1
+        with:
+          # Specify the Az PowerShell script here.
+          inlineScript:
+            Write-Host 'hey!'
