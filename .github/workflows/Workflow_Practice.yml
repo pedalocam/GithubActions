@@ -17,3 +17,4 @@ jobs:
           # Specify the Az PowerShell script here.
           inlineScript:
             Write-Host 'hey!'
+          azPSVersion: latest
